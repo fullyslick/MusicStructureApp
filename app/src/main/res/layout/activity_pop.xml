@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicstructureapp.PopActivity">
+
+    <LinearLayout style="@style/RadioHolderStyle">
+
+        <ScrollView
+            android:id="@+id/explanation"
+            style="@style/ExplanationsScrollStyle">
+
+            <LinearLayout style="@style/ExplanationHolderStyle">
+
+                <TextView
+                    style="@style/ExplanationsStyle"
+                    android:text="@string/radio_explenation" />
+
+                <Button
+                    android:id="@+id/closeExplanationButton"
+                    style="@style/CloseExplanationStyle" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView style="@style/ContentHolderStyle">
+
+            <LinearLayout style="@style/ContentStyle">
+
+                <Button
+                    android:id="@+id/kiis"
+                    style="@style/RadioOptionStyle"
+                    android:drawableRight="@drawable/kiislogo"
+                    android:text="@string/kiis" />
+
+                <View style="@style/BorderGenreStyle" />
+
+                <Button
+                    android:id="@+id/zhundred"
+                    style="@style/RadioOptionStyle"
+                    android:drawableRight="@drawable/zhundredlogo"
+                    android:text="@string/zhundred" />
+
+                <View style="@style/BorderGenreStyle" />
+
+                <Button
+                    android:id="@+id/siriusxm"
+                    style="@style/RadioOptionStyle"
+                    android:drawableRight="@drawable/siriusxmlogo"
+                    android:text="@string/siriusxm" />
+
+                <View style="@style/BorderGenreStyle" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout style="@style/PlayerStyle">
+
+        <ImageButton
+            android:id="@+id/playButton"
+            style="@style/PlayPauseButtonsStyle"
+            android:src="@drawable/playbutton" />
+
+        <ImageButton
+            android:id="@+id/pauseButton"
+            style="@style/PlayPauseButtonsStyle"
+            android:src="@drawable/pausebutton"
+            android:visibility="gone" />
+
+        <View style="@style/VerticalBorderWhiteStyle" />
+
+        <LinearLayout style="@style/StatusHolderStyle">
+
+            <TextView
+                android:id="@+id/statusText"
+                style="@style/StatusStyle"
+                android:text="@string/noradio" />
+
+            <TextView
+                android:id="@+id/radioNameStatus"
+                style="@style/RadioThatIsPlayingStyle"
+                android:layout_below="@id/statusText" />
+        </LinearLayout>
+
+        <View style="@style/VerticalBorderWhiteStyle" />
+
+        <ImageButton
+            android:id="@+id/returnButton"
+            style="@style/PlayPauseButtonsStyle"
+            android:src="@drawable/returnbutton" />
+    </LinearLayout>
+</LinearLayout>

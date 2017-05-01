@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicstructureapp.MainActivity">
+
+    <ScrollView
+        android:id="@+id/explanation"
+        style="@style/ExplanationsScrollStyle">
+
+        <LinearLayout style="@style/ExplanationHolderStyle">
+
+            <TextView
+                style="@style/ExplanationsStyle"
+                android:text="@string/genre_explenation" />
+
+            <Button
+                android:id="@+id/closeExplanationButton"
+                style="@style/CloseExplanationStyle" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView style="@style/ContentHolderStyle">
+
+        <LinearLayout style="@style/ContentStyle">
+
+            <Button
+                android:id="@+id/electronica"
+                style="@style/GenresStyle"
+                android:text="@string/electronica" />
+
+            <View style="@style/BorderGenreStyle" />
+
+            <Button
+                android:id="@+id/disco"
+                style="@style/GenresStyle"
+                android:text="@string/disco" />
+
+            <View style="@style/BorderGenreStyle" />
+
+            <Button
+                android:id="@+id/hip_hop"
+                style="@style/GenresStyle"
+                android:text="@string/hiphop" />
+
+            <View style="@style/BorderGenreStyle" />
+
+            <Button
+                android:id="@+id/rock"
+                style="@style/GenresStyle"
+                android:text="@string/rock" />
+
+            <View style="@style/BorderGenreStyle" />
+
+            <Button
+                android:id="@+id/pop"
+                style="@style/GenresStyle"
+                android:text="@string/pop" />
+
+            <View style="@style/BorderGenreStyle" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

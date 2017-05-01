@@ -1,0 +1,143 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+    <!-- This is the styling of ScrollView that holds the explanation LinearLayout-->
+    <style name="ExplanationsScrollStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/explanation_background</item>
+    </style>
+    <!-- This is the styling of LinearLayout that holds the explanation textView and close button-->
+    <style name="ExplanationHolderStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- This is the styling of the explanations TextView-->
+    <style name="ExplanationsStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/explenation_text_size</item>
+        <item name="android:padding">@dimen/padding_explanations</item>
+    </style>
+
+    <!-- This is the styling of Close Button of the explanations-->
+    <style name="CloseExplanationStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding_explanations</item>
+        <item name="android:textSize">@dimen/explenation_text_size</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:text">@string/close</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_margin">@dimen/margin_close_button</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <!-- Styling of ScrollView That Holds the content -->
+    <style name="ContentHolderStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <!-- This is the styling of Content of the App-->
+    <style name="ContentStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- This is the styling of the Genres Category-->
+    <style name="GenresStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/genre_selector</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:drawableRight">@drawable/next</item>
+    </style>
+    <!-- This is the styling of the Border views between Genres-->
+    <style name="BorderGenreStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/lighterThanPrimery</item>
+    </style>
+    <!-- This is the styling of Content Holder in radio activities -->
+    <style name="RadioHolderStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- This is the styling of the Radios Option -->
+    <style name="RadioOptionStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/genre_selector</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <!-- This is the styling of the Player in radio activities -->
+    <style name="PlayerStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!-- This is the styling of the Play & Pause Buttons -->
+    <style name="PlayPauseButtonsStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <!-- This is the styling of the Vertical Border next to player -->
+    <style name="VerticalBorderWhiteStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+    <!-- This is the styling of LinearLayout that Holds the status TextView and now playing radio textView-->
+    <style name="StatusHolderStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- This is the styling of status TextView-->
+    <style name="StatusStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- This is the styling of TextView that displays which radio is playing in the player-->
+    <style name="RadioThatIsPlayingStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

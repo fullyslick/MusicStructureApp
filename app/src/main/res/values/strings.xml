@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Music Structure App</string>
+    <string name="select_genere">Select Radio By Genre</string>
+    <string name="genre_explenation">In this activity the user can select a radio station by Genre.</string>
+    <string name="radio_explenation">This text is scrollable. In this activity the user can play on line radios from chosen genre. To play audio there is a  instance of MediaPlayer class. To allow internet connection an uses-permission is called in manifest file. When the user click on one of the given option, the play button turns into pause, status in the player changes to \"You are listening to:\", the name of the chosen radio is displayed and audio is played. Off course when functionality is added the status textView will display \"buffering\" or \"connecting to\" radio info while audio is preparing for streaming. When you press pause button, it changes to play button and should stop audio. On click of retrun icon in the player, intent to the Main Genre activity is created.</string>
+    <string name="close">close</string>
+    <string name="electronica">Electronica</string>
+    <string name="disco">Disco</string>
+    <string name="hiphop">Hip - Hop</string>
+    <string name="rock">Rock</string>
+    <string name="pop">Pop Music</string>
+    <string name="electronica_label">Electronic Music Radios</string>
+    <string name="disco_label">Disco Music Radios</string>
+    <string name="hip_hop_label">Hip Hop Music Radios</string>
+    <string name="rock_label">Rock Music Radios</string>
+    <string name="pop_label">Pop Music Radios</string>
+    <!-- Electronica Radios -->
+    <string name="rinsefm">Rinse FM</string>
+    <string name="pulse">Pulse Radio</string>
+    <string name="bbcradioone">BBC Radio 1</string>
+    <string name="bassdrive">Bassdrive</string>
+    <string name="proton">Proton Radio</string>
+    <!-- Disco Radios -->
+    <string name="discopalace">Disco Palace</string>
+    <string name="seventiesdisco">70s Disco Nights</string>
+    <string name="maxitalo">Max Italo</string>
+    <string name="funkstation">Funk Station</string>
+    <string name="euroeighties">Euro 80s</string>
+    <!-- Rock Radios -->
+    <string name="wzxr">WZXR</string>
+    <string name="klaq">KLAQ</string>
+    <string name="swhrock">SWH Rock</string>
+    <string name="planetrock">Planet Rock</string>
+    <!-- Hip Hop Radios-->
+    <string name="hot">Hot 97</string>
+    <string name="power">Power 106</string>
+    <string name="wild">Wild 94.9</string>
+    <string name="jamn">Jam\'n</string>
+    <!-- Pop Radios-->
+    <string name="kiis">KIIS</string>
+    <string name="zhundred">Z100</string>
+    <string name="siriusxm">Sirius XM Hits 1</string>
+    <!-- Common to All Genre Activities Strings-->
+    <string name="noradio">No Radio Is Selected</string>
+    <string name="nowplaying">You are listening to:</string>
+    <string name="pause">Streaming is on pause!</string>
+</resources>
